@@ -159,10 +159,20 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-/*.heto-title {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}*/
+.hero {
+  max-width: 1600px;
+  height: 600;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000000;
+  background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+         url("../images/main-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /* Секції*/
 /*Головна сторінка*/
 .section {
@@ -212,6 +222,8 @@ ul {
 /*Картки співробітників*/
 .card {
   padding: 30px 24px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /*Сторінка Портфоліо*/
 .section-title.second {
