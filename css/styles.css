@@ -69,6 +69,35 @@ img {
 .site-header {
   border-bottom: 1px solid var(--header-border-color);
 }
+.contacts-icon{
+  padding: 0px;
+  margin-right: 10px;
+    border: 0px;
+    border-radius: 4px;
+    /*background-color: var(--second-background-color);*/
+    fill: var(--second-background-color);
+    content: '';
+    height: 12px;
+    width: 16px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.contacts-icon:hover,
+.contacts-icon:focus {
+fill: var(--accent-color);
+}
+.item-two {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.item-two:first-child{
+  margin-right: 30px;
+}
+
 /*Контейнер*/
 .container {
   margin-left: auto;
@@ -140,6 +169,7 @@ img {
 .contacts.list .e-mail:focus,
 .contacts.list .e-mail:hover {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .contacts.list {
