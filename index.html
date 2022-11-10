@@ -15,11 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" /
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка-->
-    <header>
+    <header class="site-header">
       <div class="container main-nav">
         <nav class="main-nav">
           <a lang="en" href="./index.html" class="logo">
@@ -41,12 +41,14 @@
     </header>
     <main>
       <!--Герой-->
-      <section class="hero">
+      <section class="hero section">
+        <div class="conteiner"> 
         <h1 class="hero-title">Ефективні рішення<br />для вашого бізнесу</h1>
         <button type="button" class="primary-button">Замовити послугу</button>
+      </div>
       </section>
       <!--Наші переваги-->
-      <section class="section">
+      <section class="features section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наші переваги</h2>
           <ul class="feature-list">
@@ -107,10 +109,10 @@
           </ul>
         </div>
       </section>
-      <section class="comand-section">
+      <section class="comand-section section">
         <!--Наша команда-->
+        <div class="container"> 
         <h2 class="section-title">Наша команда</h2>
-        <div class="container">
           <ul class="our-comand">
             <li class="item">
               <img
@@ -153,15 +155,14 @@
       </section>
     </main>
     <!--Футер-->
-    <footer>
-      <section class="footer">
-        <div class="container">
-          <a lang="en" href="./index.html" class="logo footer">
+    <footer class ="footer">
+        <div class ="container">
+          <a lang="en" href="./index.html" class="footer-logo">
             <span class="logo-accent">Web</span>Studio
           </a>
           <address>
             <ul class="contact">
-              <li>
+              <li class="contacts-item">
                 <a
                   href="https://goo.gl/maps/BBBDbE12WqsnVFgC6"
                   target="_blank"
@@ -170,14 +171,14 @@
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li><a href="tel:+380961111111" class="phone second">+38 096 111 11 11</a></li>
-              <li>
+              <li class="contacts-item">
+                <a href="tel:+380961111111" class="phone second">+38 096 111 11 11</a></li>
+              <li class="contacts-item">
                 <a href="mailto:info@devstudio.com" class="e-mail second">info@devstudio.com</a>
               </li>
             </ul>
           </address>
         </div>
-      </section>
     </footer>
   </body>
 </html>
