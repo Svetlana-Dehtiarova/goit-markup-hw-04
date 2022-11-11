@@ -64,7 +64,15 @@ img {
 }
 
 .section {
-  margin-bottom: 94px 0px;
+  padding: 94px 0px;
+}
+/*Контейнер*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }
 /*----Хедер-----*/
 .site-header {
@@ -98,14 +106,6 @@ img {
   margin-right: 30px;
 }
 
-/*Контейнер*/
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
 /*кольори лого*/
 .logo,
 .logo-accent {
@@ -182,16 +182,12 @@ img {
 /*Герой*/
 .hero {
   background-color: var(--hero-background-color);
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
   max-width: 1600px;
-  height: 600;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--main-dark-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/main-img.jpg');
   background-repeat: no-repeat;
@@ -208,9 +204,6 @@ img {
 }
 /* Секції*/
 /*Головна сторінка*/
-.section {
-  margin-bottom: 94px;
-}
 
 .section-title,
 .section-subtitle {
@@ -222,7 +215,6 @@ img {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .img-box {
   display: flex;
@@ -232,7 +224,7 @@ img {
 }
 
 .section-subtitle.first {
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -245,12 +237,13 @@ img {
 }
 /*-----Переваги-----*/
 .features {
-  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .feature-list {
   display: flex;
+  gap: 30px;
 }
-.feature-list.advantage {
+.advantage {
   width: 270px;
 }
 .advantage:not(:last-child()) {
@@ -266,9 +259,6 @@ img {
   border-radius: 4px;
   background-color: var(--second-background-color);
   margin-bottom: 30px;
-}
-.advantage-link:not(:last-child) {
-  margin-right: 30px;
 }
 
 /*Картки співробітників*/
@@ -365,17 +355,16 @@ img {
   height: 50px;
 }
 /*Сторінка Портфоліо*/
-.section-title.second {
+.info-title {
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-align: inherit;
   margin-bottom: 4px;
+  color: var(--title-text-color);
 }
-.works {
-  padding: 94px 0px;
-}
+
 .project-card {
   margin-top: 50px;
   display: flex;
@@ -469,7 +458,7 @@ img {
   text-align: center;
   margin-top: 10px;
 }
-.projects {
+.info-description {
   font-size: 16px;
   line-height: 1.88;
 }
